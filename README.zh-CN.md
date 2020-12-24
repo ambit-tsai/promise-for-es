@@ -12,12 +12,11 @@
 
 
 # Promise For ES
-✨ ES2021 Promise 的实现，使用 ES3 语法拥有超高兼容性，并遵从 ECMA-262 与 Promises/A+ 标准
+✨ ES2021 Promise 的实现，基于 ES3 语法拥有超高兼容性，并遵从 ECMA-262 与 Promises/A+ 标准
 
 > 学习 `Promise` 的最佳方式是实现它。
 
-Almost all browsers are supported
-基于 ES3 实现的 ES6 Promise 支持几乎所有的浏览器，遵从 ECMA-262 与 Promises/A+ 标准，包含 ES2021 特性。
+
 ## 特性
 1. 基于 ES3，几乎所有浏览器都受支持；
 1. 遵从 ECMA-262 与 Promises/A+ 标准，并通过 Promises/A+ 合规性测试，以及其它相关测试；
