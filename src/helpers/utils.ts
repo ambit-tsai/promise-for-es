@@ -60,16 +60,18 @@ if (isFunction(globalObject.AggregateError)) {
 
 
 export let set: (obj: object, key: PropertyKey, val: unknown, readonly?: boolean) => void;
-if (isFunction(Object.defineProperty)) {
+try {
+    // In IE 8, `Object.defineProperty` is only effective on `Element` object, 
+    // `document` and `window`. The program will throw an exception when 
+    // `Object.defineProperty` works with others.
+    Object.defineProperty({}, '', {});
+    
     set = (obj, key, val, readonly = false) => {
         Object.defineProperty(obj, key, {
             configurable: !readonly,
             value: val,
         });
     };
-} else {
+} catch (error) {
     set = (obj, key, val) => obj[key] = val;
 }
-
-
-// const logError: Function = globalObject.console?.error || (() => {});
