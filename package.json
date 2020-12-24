@@ -1,7 +1,7 @@
 {
   "name": "promise-for-es",
   "version": "1.0.0",
-  "description": "A ES2021 Promise implementation with high compatibility, comply with ECMA-262 and Promises/A+",
+  "description": "A ES2021 Promise implementation based on ES3 has high compatibility, and comply with ECMA-262 and Promises/A+",
   "main": "dist/promise-for-es.js",
   "module": "dist/promise-for-es.mjs",
   "scripts": {
